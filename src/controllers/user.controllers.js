@@ -21,7 +21,7 @@ const createUser = catchError(async (req, res) => {
     password,
     birthday,
   });
-  return res.json(user);
+  return res.status(201).json(user);
 });
 
 const deleteUser = catchError(async (req, res) => {
